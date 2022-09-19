@@ -1,9 +1,7 @@
-import logo from "./logo.svg";
 import "./App.css";
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { increment } from "./slices/countSlice";
-import { useSelect } from "@mui/base";
 
 function App() {
   const dispatch=useDispatch();
@@ -28,10 +26,11 @@ const handleReset=()=>{
   setColor("white");
   setPosition(0)
 }
+
 const handleGameOver=(event)=>{
    let blankClick="GAME OVER";
     setmessage(blankClick)
-}
+ }
 
 
   return (
